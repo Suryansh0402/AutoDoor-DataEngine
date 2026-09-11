@@ -2,6 +2,7 @@
 
 import os
 import shutil
+import random
 try:
     import yaml
     HAS_YAML = True

@@ -11,7 +11,7 @@
 
 **An intelligent, token-optimized data engine that harvests video frames, automatically annotates doors with bounding boxes using Vision-Language Models, calculates physical aperture/openness percentages ($0\text{--}100\%$), and exports ready-to-train datasets for edge computer vision models.**
 
-[Key Capabilities](#-key-capabilities) • [System Architecture](#-system-architecture) • [Openness Estimation](#-door-openness-estimation) • [Quickstart](#-quickstart--usage) • [Integration with VisionWalk-Assist](#-integration-with-visionwalk-assist) • [Token Optimization](#-token--cost-suppression)
+[Key Capabilities](#-key-capabilities) • [System Architecture](#-system-architecture) • [Openness Estimation](#-door-openness-estimation) • [Quickstart](#-quickstart--usage) • [Integration with VisionWalk-Assist](#-integration-with-visionwalk-assist) • [System Audit & Roadmap](docs/SYSTEM_AUDIT_AND_ROADMAP.md)
 
 </div>
 
