@@ -7,7 +7,7 @@
 [![YOLOv8 Ready](https://img.shields.io/badge/Export-Ultralytics%20YOLOv8-00FFFF.svg?logo=ultralytics&logoColor=black)](https://github.com/ultralytics/ultralytics)
 [![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8.svg?logo=opencv&logoColor=white)](https://opencv.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Companion](https://img.shields.io/badge/Companion%20To-VisionGuide--Assist-purple.svg)](https://github.com/CeilSenseiCommits/VisionGuide-Assist)
+[![Companion](https://img.shields.io/badge/Companion%20To-VisionGuide--Assist-purple.svg)](https://github.com/Suryansh0402/VisionGuide-Assist)
 
 **An intelligent, token-optimized data engine that harvests video frames, automatically annotates doors with bounding boxes using Vision-Language Models, calculates physical aperture/openness percentages ($0\text{--}100\%$), and exports ready-to-train datasets for edge computer vision models.**
 
@@ -19,7 +19,7 @@
 
 ## 🎯 The Problem AutoDoor-DataEngine Solves
 
-Training high-accuracy edge computer vision models like [VisionGuide-Assist](https://github.com/CeilSenseiCommits/VisionGuide-Assist) requires hundreds of diverse, annotated indoor images across varying lighting, angles, and door types.
+Training high-accuracy edge computer vision models like [VisionGuide-Assist](https://github.com/Suryansh0402/VisionGuide-Assist) requires hundreds of diverse, annotated indoor images across varying lighting, angles, and door types.
 
 * **The Manual Labeling Bottleneck:** Drawing bounding boxes manually in tools like CVAT or Roboflow takes weeks of tedious effort.
 * **The Traversability Dilemma:** Standard detectors only distinguish a "door" from the wall. They cannot tell if a door is ajar by $15^\circ$ (unsafe, unnavigable gap) or swung $90^\circ$ wide open (clear walkway).
@@ -120,7 +120,7 @@ VisionForge-AI/
 
 ### 1. Installation
 ```bash
-git clone https://github.com/CeilSenseiCommits/AutoDoor-DataEngine.git
+git clone https://github.com/Suryansh0402/AutoDoor-DataEngine.git
 cd AutoDoor-DataEngine
 
 # Create and activate virtual environment
@@ -191,7 +191,7 @@ output_yolo/
 
 ## 🔗 Integration with VisionGuide-Assist
 
-Once exported, you can retrain or fine-tune [VisionGuide-Assist](https://github.com/CeilSenseiCommits/VisionGuide-Assist) directly on your newly synthesized dataset:
+Once exported, you can retrain or fine-tune [VisionGuide-Assist](https://github.com/Suryansh0402/VisionGuide-Assist) directly on your newly synthesized dataset:
 
 ```python
 from ultralytics import YOLO
@@ -240,4 +240,4 @@ Distributed under the **MIT License**. See `LICENSE` for details.
 
 * [Google DeepMind / Google AI Studio](https://aistudio.google.com/) for Gemini multimodal foundation models.
 * [Ultralytics](https://github.com/ultralytics/ultralytics) for YOLOv8 architecture and dataset standards.
-* Built as the automated dataset engineering engine for [VisionGuide-Assist](https://github.com/CeilSenseiCommits/VisionGuide-Assist).
+* Built as the automated dataset engineering engine for [VisionGuide-Assist](https://github.com/Suryansh0402/VisionGuide-Assist).
