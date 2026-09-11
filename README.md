@@ -201,7 +201,7 @@ model = YOLO("yolov8m.pt")
 
 # Train directly on AutoDoor-DataEngine exported data
 model.train(
-    data="c:/Users/surya/Desktop/Projects/VisionForge-AI/data/output_yolo/data.yaml",
+    data="c:/Users/surya/Desktop/Projects/AutoDoor-DataEngine/data/output_yolo/data.yaml",
     epochs=100,
     imgsz=640,
     batch=8
