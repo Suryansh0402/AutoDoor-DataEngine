@@ -1,8 +1,8 @@
-# VisionForge-AI: System Audit & Multi-Phase Engineering Roadmap 📋🚀
+# AutoDoor-DataEngine: System Audit & Multi-Phase Engineering Roadmap 📋🚀
 
 ## 1. Executive Summary & Context
 
-**VisionForge-AI** serves as the automated visual data collection, visual-language grounding, and dataset engineering engine for indoor door detection and spatial navigation (specifically powering the downstream assistive perception system **VisionWalk-Assist**).
+**AutoDoor-DataEngine** serves as the automated visual data collection, visual-language grounding, and dataset engineering engine for indoor door detection and spatial navigation (specifically powering the downstream assistive perception system **VisionGuide-Assist**).
 
 This document captures:
 1. The **initial system audit (Phase 0)** covering existing detector architectures, dataset status, training/inference pipelines, depth estimation, and identified technical debt.

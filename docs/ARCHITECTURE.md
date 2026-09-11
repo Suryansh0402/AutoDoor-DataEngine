@@ -1,10 +1,10 @@
-# VisionForge-AI: Architectural Specification & VLM Grounding Pipeline
+# AutoDoor-DataEngine: Architectural Specification & VLM Grounding Pipeline
 
 ## 1. Executive Summary
 
-**VisionForge-AI** is a specialized multimodal data collection, auto-annotation, and dataset synthesis engine. It was developed to eliminate the manual data-labeling bottleneck in training edge computer vision models (such as **VisionWalk-Assist**).
+**AutoDoor-DataEngine** is a specialized multimodal visual data collection, auto-annotation, and dataset synthesis engine. It was developed to eliminate the manual data-labeling bottleneck in training edge computer vision models (such as **VisionGuide-Assist**).
 
-By utilizing state-of-the-art Vision-Language Models (VLMs) like Google Gemini Flash alongside spatial reasoning prompts, VisionForge-AI converts raw video recordings and unannotated photos into production-grade YOLOv8 training datasets equipped with **aperture/openness percentages**.
+By utilizing state-of-the-art Vision-Language Models (VLMs) like Google Gemini Flash alongside open-vocabulary spatial grounding models, AutoDoor-DataEngine converts raw video recordings and unannotated photos into production-grade YOLOv8 training datasets equipped with **aperture/openness percentages**.
 
 ---
 

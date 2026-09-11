@@ -1,4 +1,4 @@
-"""Unified Command-Line Interface for VisionForge-AI."""
+"""Unified Command-Line Interface for AutoDoor-DataEngine."""
 
 import os
 import sys
@@ -116,7 +116,7 @@ def cmd_export(args):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="VisionForge-AI: Automated Visual Data Collection & VLM-Powered Annotation Engine"
+        description="AutoDoor-DataEngine: Automated Visual Data Collection & VLM-Powered Annotation Engine"
     )
     subparsers = parser.add_subparsers(dest="command", help="Available subcommands")
 

@@ -1,4 +1,4 @@
-# VisionForge-AI: Automated Visual Data Collection & VLM-Powered Annotation Engine 🔨👁️
+# AutoDoor-DataEngine: Automated Visual Data Collection & VLM-Powered Annotation Engine 🔨👁️
 
 <div align="center">
 
@@ -7,24 +7,24 @@
 [![YOLOv8 Ready](https://img.shields.io/badge/Export-Ultralytics%20YOLOv8-00FFFF.svg?logo=ultralytics&logoColor=black)](https://github.com/ultralytics/ultralytics)
 [![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8.svg?logo=opencv&logoColor=white)](https://opencv.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Companion](https://img.shields.io/badge/Companion%20To-VisionWalk--Assist-purple.svg)](https://github.com/CeilSenseiCommits/VisionWalk-Assist)
+[![Companion](https://img.shields.io/badge/Companion%20To-VisionGuide--Assist-purple.svg)](https://github.com/CeilSenseiCommits/VisionWalk-Assist)
 
 **An intelligent, token-optimized data engine that harvests video frames, automatically annotates doors with bounding boxes using Vision-Language Models, calculates physical aperture/openness percentages ($0\text{--}100\%$), and exports ready-to-train datasets for edge computer vision models.**
 
-[Key Capabilities](#-key-capabilities) • [System Architecture](#-system-architecture) • [Openness Estimation](#-door-openness-estimation) • [Quickstart](#-quickstart--usage) • [Integration with VisionWalk-Assist](#-integration-with-visionwalk-assist) • [System Audit & Roadmap](docs/SYSTEM_AUDIT_AND_ROADMAP.md)
+[Key Capabilities](#-key-capabilities) • [System Architecture](#-system-architecture) • [Openness Estimation](#-door-openness-estimation) • [Quickstart](#-quickstart--usage) • [Integration with VisionGuide-Assist](#-integration-with-visionguide-assist) • [System Audit & Roadmap](docs/SYSTEM_AUDIT_AND_ROADMAP.md)
 
 </div>
 
 ---
 
-## 🎯 The Problem VisionForge-AI Solves
+## 🎯 The Problem AutoDoor-DataEngine Solves
 
-Training high-accuracy edge computer vision models like [VisionWalk-Assist](https://github.com/CeilSenseiCommits/VisionWalk-Assist) requires hundreds of diverse, annotated indoor images across varying lighting, angles, and door types.
+Training high-accuracy edge computer vision models like [VisionGuide-Assist](https://github.com/CeilSenseiCommits/VisionWalk-Assist) requires hundreds of diverse, annotated indoor images across varying lighting, angles, and door types.
 
 * **The Manual Labeling Bottleneck:** Drawing bounding boxes manually in tools like CVAT or Roboflow takes weeks of tedious effort.
 * **The Traversability Dilemma:** Standard detectors only distinguish a "door" from the wall. They cannot tell if a door is ajar by $15^\circ$ (unsafe, unnavigable gap) or swung $90^\circ$ wide open (clear walkway).
 
-**VisionForge-AI eliminates this bottleneck.** By combining smart frame sampling (blur & redundancy filtering) with Google's multimodal **Gemini Flash** models, it automatically extracts frames, identifies doors, determines bounding boxes, computes the **exact percentage of openness**, and produces verified YOLOv8 datasets in minutes.
+**AutoDoor-DataEngine eliminates this bottleneck.** By combining smart frame sampling (blur & redundancy filtering) with Google's multimodal **Gemini Flash** models and open-vocabulary grounding detectors, it automatically extracts frames, identifies doors, determines bounding boxes, computes the **exact percentage of openness**, and produces verified YOLOv8 datasets in minutes.
 
 ---
 
@@ -189,9 +189,9 @@ output_yolo/
 
 ---
 
-## 🔗 Integration with VisionWalk-Assist
+## 🔗 Integration with VisionGuide-Assist
 
-Once exported, you can retrain or fine-tune [VisionWalk-Assist](https://github.com/CeilSenseiCommits/VisionWalk-Assist) directly on your newly synthesized dataset:
+Once exported, you can retrain or fine-tune [VisionGuide-Assist](https://github.com/CeilSenseiCommits/VisionWalk-Assist) directly on your newly synthesized dataset:
 
 ```python
 from ultralytics import YOLO
@@ -199,7 +199,7 @@ from ultralytics import YOLO
 # Load base model
 model = YOLO("yolov8m.pt")
 
-# Train directly on VisionForge-AI exported data
+# Train directly on AutoDoor-DataEngine exported data
 model.train(
     data="c:/Users/surya/Desktop/Projects/VisionForge-AI/data/output_yolo/data.yaml",
     epochs=100,
@@ -240,4 +240,4 @@ Distributed under the **MIT License**. See `LICENSE` for details.
 
 * [Google DeepMind / Google AI Studio](https://aistudio.google.com/) for Gemini multimodal foundation models.
 * [Ultralytics](https://github.com/ultralytics/ultralytics) for YOLOv8 architecture and dataset standards.
-* Built as the automated dataset engineering engine for [VisionWalk-Assist](https://github.com/CeilSenseiCommits/VisionWalk-Assist).
+* Built as the automated dataset engineering engine for [VisionGuide-Assist](https://github.com/CeilSenseiCommits/VisionWalk-Assist).
